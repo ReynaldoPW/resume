@@ -1,44 +1,159 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Portofolio - Reynaldo Wonges</title>
-  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>Portfolio - Reynaldo Paulini Wonges</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="style.css"/>
 </head>
 <body>
-  <header>
-    <h1>Reynaldo Wonges</h1>
-    <p>Software Tester | Automation QA | Trade Finance Specialist</p>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top shadow-sm">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="#">Reynaldo Wonges</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#experience">Experience</a></li>
+          <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+          <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <header class="bg-primary text-white text-center d-flex flex-column justify-content-center align-items-center" style="height:100vh;">
+    <h1 class="display-4 fw-bold">Reynaldo Paulini Wonges</h1>
+    <p class="lead">QA Engineer | Automation Tester | Software Quality Assurance</p>
+    <div>
+      <a href="#contact" class="btn btn-light btn-lg mt-3">Contact Me</a>
+    </div>
   </header>
 
-  <section>
-    <h2>Profil</h2>
-    <p>Saya adalah seorang QA Engineer dengan pengalaman di otomasi testing untuk modul Trade Finance, khususnya Bills and Collections.</p>
-  </section>
+  <main class="container my-5">
+    <!-- About -->
+    <section id="about" class="mb-5">
+      <h2 class="mb-3">About Me</h2>
+      <p>
+        A fast learner and well-rounded person who seeks new challenges and experiences in 
+        Software Quality Assurance both in manual and automated testing.
+      </p>
+    </section>
 
-  <section>
-    <h2>Skill</h2>
-    <ul>
-      <li>Robot Framework</li>
-      <li>Python (pandas, openpyxl)</li>
-      <li>UI Automation Testing</li>
-    </ul>
-  </section>
+    <!-- Education -->
+    <section id="education" class="mb-5">
+      <h2 class="mb-3">Education</h2>
+      <div class="card shadow-sm p-3">
+        <h5>Institute Business and Informatics Kwik Kian Gie</h5>
+        <p class="mb-1"><em>Sep 2014 - Nov 2018 | Jakarta, Indonesia</em></p>
+        <p>Bachelor of Computer Science, GPA: 3.09/4.00</p>
+        <p>Member of Informatics Committee (2015-2016)</p>
+      </div>
+    </section>
 
-  <section>
-    <h2>Pengalaman Kerja</h2>
-    <article>
-      <h3>Automation Tester - Bank XYZ</h3>
-      <p>2021 - Sekarang</p>
-      <p>Mengembangkan script otomasi untuk modul Bills and Collections.</p>
-    </article>
-  </section>
+    <!-- Experience -->
+    <section id="experience" class="mb-5">
+      <h2 class="mb-3">Work Experience</h2>
 
-  <section>
-    <h2>Kontak</h2>
-    <p>Email: <a href="mailto:reynaldo@example.com">reynaldo@example.com</a></p>
-    <p>GitHub: <a href="https://github.com/username">github.com/username</a></p>
-  </section>
+      <div class="card shadow-sm p-3 mb-3">
+        <h5>Indonesia Eximbank - QA Engineer</h5>
+        <p><em>Apr 2025 - Present | Jakarta</em></p>
+        <ul>
+          <li>Develop and automate testing scripts using Robot Framework</li>
+          <li>Report defects to stakeholders and developers</li>
+          <li>Collaborate with System Analyst & OPS team</li>
+          <li>Improved testing accuracy above 90% by streamlining processes</li>
+        </ul>
+      </div>
+
+      <div class="card shadow-sm p-3 mb-3">
+        <h5>PT XL Axiata Tbk - QA Engineer</h5>
+        <p><em>May 2023 - Mar 2025 | Jakarta</em></p>
+        <ul>
+          <li>Projects: BSS Transformation, EXACC Migration, C1D1 Upgrade</li>
+          <li>API Testing, Bug reporting via Jira</li>
+          <li>BDD Automation with Python, Automation with Katalon Studio</li>
+          <li>Executed BUAT, FUT, Sanity & E2E testing</li>
+        </ul>
+      </div>
+
+      <div class="card shadow-sm p-3">
+        <h5>Juara Coding - Internship</h5>
+        <p><em>Feb 2023 - Apr 2023 | Jakarta</em></p>
+        <ul>
+          <li>Created test cases & executed scripts for Project Siloam</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Skills -->
+    <section id="skills" class="mb-5">
+      <h2 class="mb-3">Skills</h2>
+      <div class="row">
+        <div class="col-md-6">
+          <h6>Hard Skills</h6>
+          <span class="badge bg-secondary m-1">Java</span>
+          <span class="badge bg-secondary m-1">Python</span>
+          <span class="badge bg-secondary m-1">Groovy</span>
+          <span class="badge bg-secondary m-1">SQL</span>
+          <span class="badge bg-secondary m-1">Selenium</span>
+          <span class="badge bg-secondary m-1">Appium</span>
+          <span class="badge bg-secondary m-1">Katalon</span>
+          <span class="badge bg-secondary m-1">Postman</span>
+          <span class="badge bg-secondary m-1">JMeter</span>
+          <span class="badge bg-secondary m-1">Cucumber BDD</span>
+          <span class="badge bg-secondary m-1">Jira</span>
+          <span class="badge bg-secondary m-1">RPA UiPath</span>
+        </div>
+        <div class="col-md-6">
+          <h6>Soft Skills</h6>
+          <span class="badge bg-info m-1">Communication</span>
+          <span class="badge bg-info m-1">Teamwork</span>
+          <span class="badge bg-info m-1">Adaptability</span>
+          <span class="badge bg-info m-1">Critical Thinking</span>
+          <span class="badge bg-info m-1">Time Management</span>
+          <span class="badge bg-info m-1">Leadership</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects -->
+    <section id="projects" class="mb-5">
+      <h2 class="mb-3">Projects</h2>
+      <ul class="list-group">
+        <li class="list-group-item">2025: Core Banking System Upgrade - Indonesia Eximbank</li>
+        <li class="list-group-item">2025: C1D1 Upgrade Project - PT XL Axiata Tbk</li>
+        <li class="list-group-item">2024: EXACC Migration - PT XL Axiata Tbk</li>
+        <li class="list-group-item">2023: BSS Transformation - PT XL Axiata Tbk</li>
+      </ul>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="mb-5 text-center">
+      <h2 class="mb-3">Contact</h2>
+      <p>Email: <a href="mailto:reynaldowonges@gmail.com">reynaldowonges@gmail.com</a></p>
+      <p>Phone: 085659131518</p>
+      <p>
+        <a href="https://www.linkedin.com/in/reypau/" target="_blank" class="btn btn-outline-primary m-1">LinkedIn</a>
+        <a href="https://github.com/ReynaldoPW" target="_blank" class="btn btn-outline-dark m-1">GitHub</a>
+      </p>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-dark text-white text-center p-3">
+    <p class="mb-0">© 2025 Reynaldo Paulini Wonges</p>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
